@@ -6,6 +6,7 @@ import time
 from ultralytics import YOLO
 
 # Load YOLOv8 model
+# test on yolov8s , yolov8l , yolov8x
 @st.cache_resource()
 def load_model():
     model = YOLO('yolov8x.pt')  # Load YOLOv8 model
