@@ -6,6 +6,7 @@ import numpy as np
 import time
 
 # Load YOLOv5 model
+# test other models like yolov5s , yolov5l , yolov5x
 @st.cache_data()
 @st.cache_resource()
 def load_model():
