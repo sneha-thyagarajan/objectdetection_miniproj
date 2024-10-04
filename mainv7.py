@@ -4,10 +4,11 @@ import cv2
 import time
 
 # Load YOLOv7 model
+# test on yolov7 , yolov7-w6 , yolov7x
 @st.cache_resource()
 def load_model():
     # Load the YOLOv7 model from the local weights
-    model = torch.hub.load('yolov7', 'custom', 'yolov7x.pt', source='local')
+    model = torch.hub.load('yolov7', 'custom', 'yolov7.pt', source='local')
     return model
 
 # Function to perform object detection on a frame
