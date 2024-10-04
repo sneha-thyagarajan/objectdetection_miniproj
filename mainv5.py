@@ -9,7 +9,7 @@ import time
 @st.cache_data()
 @st.cache_resource()
 def load_model():
-    model = torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True)
+    model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
     return model
 
 # Function to perform object detection on a frame
